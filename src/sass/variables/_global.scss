@@ -1,0 +1,23 @@
+@use "typography";
+@use "colors";
+@use "function";
+
+body {
+  font-family: typography.$font-family;
+  font-size: function.pixelToRem(13);
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: function.pixelToRem(327);
+  height: function.pixelToRem(513);
+
+  &__image {
+  }
+
+  &__copy {
+  }
+}
