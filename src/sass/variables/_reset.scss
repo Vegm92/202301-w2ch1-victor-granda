@@ -1,0 +1,12 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}

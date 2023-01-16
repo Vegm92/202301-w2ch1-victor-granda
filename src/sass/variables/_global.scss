@@ -1,0 +1,45 @@
+@use "typography";
+@use "colors";
+@use "function";
+
+body {
+  font-family: typography.$font-family;
+  font-size: function.pixelToRem(13);
+  background-color: lightgrey;
+}
+
+.card-container {
+  box-shadow: 0 5px 5px 0 gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: function.pixelToRem(328);
+  height: function.pixelToRem(513);
+  border-radius: function.pixelToRem(8);
+  background-color: white;
+
+  &__image {
+    margin-bottom: function.pixelToRem(40);
+  }
+
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    gap: function.pixelToRem(25);
+    height: function.pixelToRem(178);
+    width: function.pixelToRem(260);
+  }
+
+  &__head {
+    font-weight: typography.$font-weights-medium;
+    font-size: typography.$standar-font-size;
+  }
+
+  &__description {
+    font-weight: typography.$font-weights-light;
+  }
+}
