@@ -21,6 +21,7 @@ body {
   height: function.pixelToRem(513);
   border-radius: function.pixelToRem(8);
   background-color: white;
+  letter-spacing: 0.05rem;
 
   &__image {
     margin-bottom: function.pixelToRem(40);
@@ -41,5 +42,6 @@ body {
 
   &__description {
     font-weight: typography.$font-weights-light;
+    color: colors.$color-desaturated-dark-blue;
   }
 }
