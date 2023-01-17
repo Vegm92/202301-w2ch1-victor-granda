@@ -1,0 +1,41 @@
+@use "./function";
+@use "./typography";
+@use "./colors";
+
+.card-container__footer {
+  display: flex;
+  height: function.pixelToRem(45);
+  width: function.pixelToRem(260);
+  margin-top: function.pixelToRem(33);
+}
+
+.footer__profilepic {
+  border-radius: 50%;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: function.pixelToRem(16);
+  gap: function.pixelToRem(3) &--name {
+    font-weight: typography.$font-weights-medium;
+    color: colors.$color-dark-grayish-blue;
+  }
+
+  &--date {
+    color: colors.$color-desaturated-dark-blue;
+    font-weight: typography.$font-weights-light;
+  }
+}
+
+.button {
+  position: relative;
+  left: 20%;
+  top: 40%;
+  &__icon-share {
+    position: relative;
+
+    justify-content: center;
+  }
+}
